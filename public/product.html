@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kana Enginering</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        @keyframes slide {
+            from{ transform: translateX(0); }
+            to { transform: translateX(-100%); }
+        }
+        .animate-slide {
+            flex-shrink: 0;
+            gap : 2rem;
+            animation: slide 10s linear infinite;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex flex-shrink-0 mr-6">
+                <img src="../assets/img/logo.png" alt="Kana Enginering" class="h-12 w-50 mr-2">
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="index.html" class="text-gray-300 hover:text-white">Home</a>
+                <a href="product.html" class="text-gray-300 hover:text-white">Product</a>
+                <a href="aboutUs.html" class="text-gray-300 hover:text-white">About</a>
+                <a href="contact.html" class="text-gray-300 hover:text-white">Contact </a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-300 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="menu" class="hidden md:hidden">
+            <a href="index.html" class="block text-gray-300 hover:text-white p-2">Home</a>
+            <a href="product.html" class="block text-gray-300 hover:text-white p-2">Product</a>
+            <a href="aboutUs.html" class="block text-gray-300 hover:text-white p-2">About</a>
+            <a href="contact.html" class="block text-gray-300 hover:text-white p-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- isi -->
+    <div class="text-center mt-10">
+        <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">OUR PRODUCT RANGE</h1>
+        <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-900 ">Based on Our Business License (NIB & Ijin Usaha)</h2>
+    </div>
+    <div class="flex flex-wrap justify-center mt-10">
+        <!-- card 1 -->
+        <div class="p-4 max-w-sm">
+            <div class="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
+                <div class="flex items-center mb-3">
+                    
+                    <h2 class="text-white dark:text-white text-lg font-medium">Electrical Equipment & Component</h2>
+                </div>
+                <div class="flex flex-col justify-between flex-grow">
+                    <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                        <li>Wiring & cables: Power cables, cable trays, conduit, socket, connectors.</li>
+                        <li>Electrical Components: Circuit breakers, fuse contactors, switches, and relays.</li>
+                        <li>Power Distribution: Electric motors, transformers, and generators.</li>
+                        <li>Industrial Lighting.</li>
+                        <li>Wireless & Communication: HT, GPS & wireless ethernet.</li>
+                        <li>Electrical Tools & Accessories: Multimeter, crimping tools, heat shrink.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-4 max-w-sm">
+            <div class="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
+                <div class="flex items-center mb-3">
+                    
+                    <h2 class="text-white dark:text-white text-lg font-medium">Machinery Equipment & Instrumentation Tools</h2>
+                </div>
+                <div class="flex flex-col justify-between flex-grow">
+                    <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                        <li>Hydraulic & Pneumatic: Pumps, cylinders, hoses, pneumatic actuators, & valves.</li>
+                        <li>Machine & Power Tools: Grinding machine, metal cutting, electric drills, pneumatic air tools, cordless.</li>
+                        <li>Lifting Gear & Spare parts: Webbing, chain block, shackle bearing, belts, seals, pulley.</li>
+                        <li>Instrumentation & Measurement: Calipers, gauges, laser levels, thermal imaging cameras, geological surveying tools.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="p-4 max-w-sm">
+            <div class="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
+                <div class="flex items-center mb-3">
+                    
+                    <h2 class="text-white dark:text-white text-lg font-medium">Laboratory Consumables & Equipment</h2>
+                </div>
+                <div class="flex flex-col justify-between flex-grow">
+                    <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                        <li>Measurement Tools: pH meters, conductivity meters, TSS meters, Coliform detection Kit, thermometers, thermocouples, microscopes, gas analyzers, spectrophotometers, etc.</li>
+                        <li>Glassware & Plasticware: Beakers, flasks, petri dishes, burettes, pipettes, microplates; Filtration Products: Filter paper, vacuum pumps.</li>
+                        <li>Laboratory Chemicals: Solvents, acids, bases, buffers, and analytical reagents & standards.</li>
+                        <li>Lab Safety Supplies: Safety goggles, face shields, lab coats.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="p-4 max-w-sm">
+            <div class="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
+                <div class="flex items-center mb-3">
+                    
+                    <h2 class="text-white dark:text-white text-lg font-medium">Safety Equipment</h2>
+                </div>
+                <div class="flex flex-col justify-between flex-grow">
+                    <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                        <li>Personal protective equipment (PPE): Safety helmet, eyewear, respiratory, gloves, and safety shoes.</li>
+                        <li>Safety Apparels: FR Clothing</li>
+                        <li>Rescue Tools: Safety harnesses, ropes and rigging rescue, life vests.</li>
+                        <li>Safety barrier, security alarms.</li>
+                        <li>Fire Safety: Fire extinguishers, fire alarms, and detectors.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <!-- produk -->
+    <div class="text-center mt-10">
+        <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">OUR PRODUCT RANGE</h1>
+        <!-- <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-900 ">Based on Our Business License (NIB & Ijin Usaha)</h2> -->
+    </div>
+    
+    <div class="text-center">
+        <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-900 ">Electrical Equipment & Component</h2>
+        <div class="overflow-hidden relative animate-logo flex " id="electrical" >
+            <div class="flex animate-slide m-3">
+                <img src="../assets/img/ABB.png" alt="ABB" class="w-48 h-32 object-contain">
+                <img src="../assets/img/Schneider-Electric.png" alt="Scheneider Electric" class="w-48 h-32 object-contain">
+                <img src="../assets/img/siemens.png" alt="Siemens" class="w-48 h-32 object-contain">
+                <img src="../assets/img/Phillips.png" alt="Philips" class="w-48 h-32 object-contain">
+                <img src="../assets/img/omron.png" alt="Omoron" class="w-48 h-32 object-contain">
+                <img src="../assets/img/weidmueller.png" alt="weidmueller" class="w-48 h-32 object-contain">
+                <img src="../assets/img/idec.png" alt="Idec" class="w-48 h-32 object-contain">
+                <img src="../assets/img/fuji.png" alt="Fuji Electric" class="w-48 h-32 object-contain">
+                <img src="../assets/img/eaton.webp" alt="Eaton" class="w-48 h-32 object-contain">
+                
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-900 ">Industrial Machinery & Equipment</h2>
+        <div class="overflow-hidden relative animate-logo flex " id="machinery">
+            <div class="flex animate-slide m-3">
+                <img src="../assets/img/makita.png" alt="Makita" class="w-48 h-32 object-contain">
+                <img src="../assets/img/metabo.png" alt="Metabo" class="w-48 h-32 object-contain">
+                <img src="../assets/img/dewalt.png" alt="Dewalt" class="w-48 h-32 object-contain">
+                <img src="../assets/img/bosch.png" alt="Bosch" class="w-48 h-32 object-contain">
+                <img src="../assets/img/hitachi.webp" alt="Hitachi" class="w-48 h-32 object-contain">
+                <img src="../assets/img/black_decker.png" alt="Black and Dacker" class="w-48 h-32 object-contain">
+                <img src="../assets/img/festo.png" alt="Festo" class="w-48 h-32 object-contain">
+                <img src="../assets/img/ebara.png" alt="Ebara" class="w-48 h-32 object-contain">
+                <img src="../assets/img/grunfos.png" alt="Grunfos" class="w-48 h-32 object-contain">
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-900 ">Laboratory Consumables & Equipment</h2>
+        <div class="overflow-hidden relative animate-logo flex " id="laboratory">
+            <div class="flex animate-slide m-3">
+                <img src="../assets/img/hanna.png" alt="Hanna Instrument" class="w-48 h-32 object-contain">
+                <img src="../assets/img/mettler_toledo_logo.png" alt="Mettler Toledo" class="w-48 h-32 object-contain">
+                <img src="../assets/img/olympus.png" alt="Olympus" class="w-48 h-32 object-contain">
+                <img src="../assets/img/sartorius.jpg" alt="sartorius" class="w-48 h-32 object-contain">
+                <img src="../assets/img/hach.jpg" alt="hach" class="w-48 h-32 object-contain">
+                <img src="../assets/img/leco.jpg" alt="Leco" class="w-48 h-32 object-contain">
+                <img src="../assets/img/pyrex.png" alt="Pyrex" class="w-48 h-32 object-contain">
+                <img src="../assets/img/flir.png" alt="Flir" class="w-48 h-32 object-contain">
+                <img src="../assets/img/pneumax.png" alt="Pneumax" class="w-48 h-32 object-contain">
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-900 ">Safety Equipment & Supplies</h2>
+        <div class="overflow-hidden relative animate-logo flex " id="safety">
+            <div class="flex animate-slide m-3">
+                <img src="../assets/img/tyvek.png" alt="Tyvek" class="w-48 h-32 object-contain">
+                <img src="../assets/img/msa.png" alt="MSA" class="w-48 h-32 object-contain">
+                <img src="../assets/img/3m.png" alt="3M" class="w-48 h-32 object-contain">
+                <img src="../assets/img/helmProyek.jpeg" alt="Helm Proyek" class="w-48 h-32 object-contain">
+                <img src="../assets/img/wearpack.png" alt="Wearpack" class="w-48 h-32 object-contain">
+                <img src="../assets/img/apar.png" alt="Apar" class="w-48 h-32 object-contain">
+                <img src="../assets/img/safeguard.png" alt="Safeguard" class="w-48 h-32 object-contain">
+                <img src="../assets/img/redwing.jpg" alt="Redwings" class="w-48 h-32 object-contain">
+                <img src="../assets/img/krushers.jpg" alt="Krushers" class="w-48 h-32 object-contain">
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-between">
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h5 class="text-lg font-bold mb-4">Quick Links</h5>
+                    <ul class="list-none">
+                        <li class="mb-2"><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li class="mb-2"><a href="product.html" class="text-gray-400 hover:text-white">Product</a></li>
+                        <li class="mb-2"><a href="aboutUs.html" class="text-gray-400 hover:text-white">About</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/3">
+                    <h5 class="text-lg font-bold mb-4">Contact Us</h5>
+                    <p class="text-gray-400">Jl. KH Abdullah Syafe'i No.1, Tebet Tim., Kec. Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12820</p>
+                    <p class="text-gray-400">Email: sales@kanaengineering.com</p>
+                    <p class="text-gray-400">Email: admin@kanaengineering.com</p>
+                    <p class="text-gray-400">Phone: +62 21-5424-3488</p>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-4 text-center">
+                <p class="text-gray-400">© 2020 kanaengineering.com . All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+        function duplicateImages(sectionId) {
+            const section = document.getElementById(sectionId);
+            const slideContainer = section.querySelector('.animate-slide');
+            const clone = slideContainer.cloneNode(true);
+            section.appendChild(clone);
+        }
+
+        duplicateImages("electrical");
+        duplicateImages("machinery");
+        duplicateImages("laboratory");
+        duplicateImages("safety");
+    });
+
+    </script>
+</body>
+</html>

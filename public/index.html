@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kana Enginering</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        @keyframes slide {
+            from{ transform: translateX(0); }
+            to { transform: translateX(-100%); }
+        }
+        .animate-slide {
+            flex-shrink: 0;
+            gap : 2rem;
+            animation: slide 10s linear infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="bg-center bg-no-repeat bg-gray-700 bg-blend-multiply " style="background-image: url(../assets/img/background.jpg);  height: 100vh;">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center ">
+            <div class="flex flex-shrink-0 mr-6">
+                <img src="../assets/img/logo.png" alt="Kana Enginering" class="h-12 w-50 mr-2">
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="index.html" class="text-gray-300 hover:text-white">Home</a>
+                <a href="product.html" class="text-gray-300 hover:text-white">Product</a>
+                <a href="aboutUs.html" class="text-gray-300 hover:text-white">About</a>
+                <a href="contact.html" class="text-gray-300 hover:text-white">Contact </a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-300 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="menu" class="hidden md:hidden">
+            <a href="index.html" class="block text-gray-300 hover:text-white p-2">Home</a>
+            <a href="product.html" class="block text-gray-300 hover:text-white p-2">Product</a>
+            <a href="aboutUs.html" class="block text-gray-300 hover:text-white p-2">About</a>
+            <a href="contact.html" class="block text-gray-300 hover:text-white p-2">Contact</a>
+        </div>
+    </nav>
+    
+    <!-- About -->
+        
+        <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">KANA ENGINEERING</h1>
+            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">PT KANA ENGINEERING INDONESIA is an adaptable, and proactive industrial supplier that is rapidly gaining recognition for its commitment to quality, innovation, and customer satisfaction.</p>
+        </div>
+    </section>
+
+    <!-- card -->
+    <section class="flex flex-wrap justify-center mt-10 mb-10">
+        <div  class="m-3 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">OUR COMITMEN</h5>
+            <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside  text-gray-700 dark:text-gray-400">
+                <li>We guarantee quality and originality of the product.</li>
+                <li>Offering competitive pricing without compromising on quality.</li>
+                <li>Support every unique needs and inquiry of each Clients.</li>
+                <li>Responsible and reliable partner dedicated to your needs.</li>
+                <li>We prioritize customer satisfaction.</li>
+            </ol>
+        </div>
+
+        <div class="m-3 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">OUR CORE VALUES</h5>
+            <ol class="ps-5 mt-2 space-y-1 list-decimal list-inside  text-gray-900 dark:text-white">
+                <li>
+                    Quality
+                    <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                        <li>Comitment to delivering high-quality products and services.</li>
+                    </ul>
+                </li>
+                <li>
+                    Integrity
+                    <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                        <li>Work with honesty, transparency, and ethics in all business dealings, maintaining trust with stakeholders</li>
+                    </ul>
+                </li>
+                <li>
+                    Costumer satisfaction
+                    <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                        <li>Placing the customer's needs and satisfaction at the center of all operations and decision-making processes</li>
+                    </ul>
+                </li>
+                <li>
+                    Reliability
+                    <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                        <li>Consistently delivering products and services on time, reliably meeting commitments and promises.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    
+    </section>
+
+    <div class="text-center">
+        <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-900 ">OUR COSTUMER</h2>
+        <div class="overflow-hidden relative animate-logo flex " >
+            <div class="flex animate-slide m-3">
+                <img src="../assets/img/bukit_asam.svg" alt="Bukit Asam" class="w-48 h-32 object-contain">
+                <img src="../assets/img/adaro.png" alt="Adaro" class="w-48 h-32 object-contain">
+                <img src="../assets/img/antam.png" alt="Antam" class="w-48 h-32 object-contain">
+                <img src="../assets/img/logo-inalum.png" alt="Inalum" class="w-48 h-32 object-contain">
+                <img src="../assets/img/peruri.png" alt="Peruri" class="w-48 h-32 object-contain">
+                <img src="../assets/img/perkebunan_nusantara.png" alt="Perkebunan Nusantara" class="w-48 h-32 object-contain">
+                <img src="../assets/img/TransJakarta.png" alt="Transjakarta" class="w-48 h-32 object-contain">
+                <img src="../assets/img/KAI.png" alt="KAI" class="w-48 h-32 object-contain">
+                <img src="../assets/img/Logo_sucofindo.png" alt="Sucofindo" class="w-48 h-32 object-contain">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-between">
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h5 class="text-lg font-bold mb-4">Quick Links</h5>
+                    <ul class="list-none">
+                        <li class="mb-2"><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li class="mb-2"><a href="product.html" class="text-gray-400 hover:text-white">Product</a></li>
+                        <li class="mb-2"><a href="aboutUs.html" class="text-gray-400 hover:text-white">About</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/3">
+                    <h5 class="text-lg font-bold mb-4">Contact Us</h5>
+                    <p class="text-gray-400">Jl. KH Abdullah Syafe'i No.1, Tebet Tim., Kec. Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12820</p>
+                    <p class="text-gray-400">Email: sales@kanaengineering.com</p>
+                    <p class="text-gray-400">Email: admin@kanaengineering.com</p>
+                    <p class="text-gray-400">Phone: +62 21-5424-3488</p>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-4 text-center">
+                <p class="text-gray-400">© 2020 kanaengineering.com . All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        const logo = document.querySelector('.animate-slide').cloneNode(true);
+        document.querySelector('.animate-logo').appendChild(logo);
+    </script>
+</body>
+</html>
